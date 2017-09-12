@@ -25,7 +25,9 @@ class Getto::Elm::Layout::DrawerTest < Minitest::Test
       namespace :demo do
         page :demo1, "demo1"
         page :demo2, "demo2", version: {css: "0.1.2"}
-        page :demo3, "demo3", package: {page: "GettoLayout"}
+      end
+      namespace :demo_demo do
+        page :demo_demo3, "demo3", package: {page: "GettoLayout"}
       end
     end
 
@@ -48,6 +50,7 @@ class Getto::Elm::Layout::DrawerTest < Minitest::Test
             "i18n": "GettoHabit",
           },
           title: "demo1",
+          module: "Demo.Demo1",
         },
         "demo/demo2" => {
           app: {
@@ -66,8 +69,9 @@ class Getto::Elm::Layout::DrawerTest < Minitest::Test
             "i18n": "GettoHabit",
           },
           title: "demo2",
+          module: "Demo.Demo2",
         },
-        "demo/demo3" => {
+        "demo_demo/demo_demo3" => {
           app: {
             port: 1000,
             project: "getto/habit",
@@ -84,6 +88,7 @@ class Getto::Elm::Layout::DrawerTest < Minitest::Test
             "i18n": "GettoHabit",
           },
           title: "demo3",
+          module: "DemoDemo.DemoDemo3",
         },
       },
       config,
