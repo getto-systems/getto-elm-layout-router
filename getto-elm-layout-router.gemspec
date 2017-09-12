@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Getto::Elm::Layout::Router::VERSION
   spec.authors       = ["shun"]
   spec.email         = ["shun@getto.systems"]
+  spec.license       = "MIT"
 
   spec.summary       = %q{router for getto-elm-layout}
   spec.description   = %q{create routes.json for getto-elm-layout's router data}
@@ -32,5 +33,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
-  spec.add_development_dependency "travis"
+  spec.add_development_dependency "travis", "~> 1.8"
 end
