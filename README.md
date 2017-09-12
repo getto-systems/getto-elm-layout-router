@@ -3,7 +3,6 @@
 [![Build Status](https://travis-ci.org/getto-systems/getto-elm-layout-router.svg?branch=master)](https://travis-ci.org/getto-systems/getto-elm-layout-router)
 [![Gem Version](https://badge.fury.io/rb/getto-elm-layout-router.svg)](https://badge.fury.io/rb/getto-elm-layout-router)
 
-
 router script for getto-elm-layout
 
 ## Installation
