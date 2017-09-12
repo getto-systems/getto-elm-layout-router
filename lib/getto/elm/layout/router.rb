@@ -4,7 +4,9 @@ module Getto
   module Elm
     module Layout
       module Router
-        # Your code goes here...
+        autoload :Drawer, "getto/elm/layout/router/drawer"
+        autoload :Container, "getto/elm/layout/router/container"
+        autoload :HashEx, "getto/elm/layout/router/hash_ex"
       end
     end
   end
