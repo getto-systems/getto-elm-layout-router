@@ -8,8 +8,8 @@ module Getto::Elm::Layout::Router
       @config = {}
     end
 
-    def namespace(path,&block)
-      @config.merge! Container.new(@path.dup.push(path),@app).instance_exec(&block)
+    def namespace(path,config={},&block)
+      @config.merge! Container.new(@path.dup.push(path),@app.deep_merge(config)).instance_exec(&block)
     end
     def page(page,title,config={})
       path = @path + [page]
