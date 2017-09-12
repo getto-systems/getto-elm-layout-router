@@ -8,7 +8,7 @@ module Getto::Elm::Layout::Router
     end
 
     def draw(&block)
-      File.write @output_file, build(&block)
+      File.write @output_file, JSON.generate(build(&block))
     end
     def build(&block)
       Container.new([],@app).instance_exec(&block)
