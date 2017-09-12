@@ -1,5 +1,13 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.4.1
+- 2.4.1
 before_install: gem install bundler -v 1.15.4
+deploy:
+  provider: rubygems
+  api_key:
+    secure: muG5PaWqr+z9QpQFinwUwR/3pXXAaWWYb/6L+lRN9aNWmQJxCKAgzJYe437VdGO56N3kYlMgzBqdW/sBr7kK3Ih+IbtyKezbj7iSPOYdaKWB33bk7sWE3G8mHbuxQG0egAOPZs3iwhEn2okdTINLBU3gjbRYgF1NFLwo63A7PG689Krol3GFyGzAwy8iLgcz53Pnx/JdMQ6nA+NPCyFgMYhSIOLQhQSwdRRNf4+JvL2q6nerA00Ujcidnw2k7B6skG+8OGZqebSAQmA+VYCyrSQpTkdY/1UGWK0IX6G/nRcB9ecscGE2p3Qy0vDqusbTl1TEfil+IXeFIB4J0yzI/vkUVwziwbIG67aDZIrn+YrmVHrxX6kDY7lSe089vemdDQJdHlrEgQll97OOl5rstxwnyblu0Wt9gzqi0X/H79K9MCyiKZTPjztZKRyt3V6HgBZk7RNz5eVaTQoqdlbt6lgJmZjSOZSjOcMQxFLHJao7YipRtfUR7sRVPDiO5sowf4gRO5/Y+MakwN039xJZUhY7odpxMmVOJvM6dZ1A2qHGJ/k+cQABQq5TgKIoHFKqOfRkYkH1ML8zFlLhakn9DV0mam0w24tl+QRPoGea87Y5yjpaapZZ8UgD+Bs4hhmjG0ssKgdJDyK2FI5keYsHRXaw4e97I9cOPn2bkR+9rYE=
+  gem: getto-elm-layout-router
+  on:
+    tags: true
+    repo: getto-systems/getto-elm-layout-router
