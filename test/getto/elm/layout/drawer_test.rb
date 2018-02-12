@@ -52,6 +52,7 @@ class Getto::Elm::Layout::DrawerTest < Minitest::Test
           },
           title: "demo1",
           module: "Demo.Demo1",
+          path: "demo/demo1",
         },
         "demo/demo2" => {
           app: {
@@ -71,6 +72,7 @@ class Getto::Elm::Layout::DrawerTest < Minitest::Test
           },
           title: "demo2",
           module: "Demo.Demo2",
+          path: "demo/demo2",
         },
         "demo_demo/demo_demo3" => {
           app: {
@@ -90,6 +92,7 @@ class Getto::Elm::Layout::DrawerTest < Minitest::Test
           },
           title: "demo3",
           module: "DemoDemo.DemoDemo3",
+          path: "demo_demo/demo_demo3",
         },
         "demo_demo/demo_demo4" => {
           app: {
@@ -109,6 +112,7 @@ class Getto::Elm::Layout::DrawerTest < Minitest::Test
           },
           title: "demo4",
           module: "DemoDemo.DemoDemo4",
+          path: "demo_demo/demo_demo4",
         },
       },
       config,

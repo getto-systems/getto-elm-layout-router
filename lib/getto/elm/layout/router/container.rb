@@ -13,12 +13,14 @@ module Getto::Elm::Layout::Router
     end
     def page(page,title,config={})
       path = @path + [page]
+      path_str = path.join("/")
       @config.merge!(
-        path.join("/") => @app.deep_merge(config).deep_merge(
+        path_str => @app.deep_merge(config).deep_merge(
           title: title,
           module: path.map{|p|
             "_#{p}".gsub(/_./){|k| k[1].upcase}
           }.join("."),
+          path: path_str,
         )
       )
     end
